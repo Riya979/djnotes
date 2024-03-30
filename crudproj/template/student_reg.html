@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    {% include 'cdnlines.html' %}
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>ENter student details</h2>
+                <form action="" method="post">{% csrf_token %}
+                    <label>Firstname</label>
+                    <input type="text" name="fname" class="form-control">
+                    <label>Lastname</label>
+                    <input type="text" name="lname" class="form-control">
+                    <label>Email</label>
+                    <input type="text" name="email" class="form-control">
+                    <label>Mobile</label>
+                    <input type="number" name="mobile" class="form-control"> 
+                    <label>Marks1</label>
+                    <input type="number" name="marks1" class="form-control">
+                    <label>Marks2</label>
+                    <input type="number" name="marks2" class="form-control">
+                    <label>Marks3</label>
+                    <input type="number" name="marks3" class="form-control">
+                    <label>Marks4</label>
+                    <input type="number" name="marks4" class="form-control">
+                    <input type="submit" value="submit" class="btn-btn-success">
+                    <input type="reset" value="cancel" class="btn-btn-info">
+                    
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
